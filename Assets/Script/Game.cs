@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
     public Ctrl Ctrl;
+
+   
     public enum State
     {
         Playng,

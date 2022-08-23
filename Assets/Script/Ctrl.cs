@@ -7,6 +7,7 @@ public class Ctrl : MonoBehaviour
     public Transform LvL;
     public float Sens;
     private Vector3 _previousMousePosition;
+      
 
     void Update()
     {
@@ -14,8 +15,10 @@ public class Ctrl : MonoBehaviour
         {
             Vector3 delta = Input.mousePosition - _previousMousePosition;
             LvL.Rotate(0, -delta.x*Sens, 0);
+           
         }
-
+       
         _previousMousePosition = Input.mousePosition;
+       
     }
 }
